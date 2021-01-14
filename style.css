@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+hr {
+  position: relative;
+  width: 400px;
+  border-bottom: hsl(240, 5%, 91%);
+  left: 20px;
+}
+
+.flex-test {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  background-color: white;
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.images {
+  /* setting background image from css automatically hides overflow */
+  background-image: url("images/illustration-woman-online-desktop.svg"),
+    url("images/bg-pattern-desktop.svg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left -83px center, left -570px bottom -100px;
+}
+
+.box {
+  /* creating an image element in html allows for image overflow */
+  position: relative;
+  top: 43%;
+  left: -9%;
+}
+
+.faq {
+  position: relative;
+  width: 500px;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.question,
+h1 {
+  padding: 20px;
+  border-bottom: gray;
+}
+
+.arrow {
+  display: block;
+  position: relative;
+  top: -2em;
+  left: 80%;
+}
+
+.arrow-up {
+  display: block;
+  position: relative;
+  top: -2em;
+  left: 80%;
+  transform: scaleY(-1);
+}
+
+.answer-close {
+  position: absolute;
+  display: none;
+}
+
+.answer-open {
+  position: relative;
+  width: 400px;
+  padding-left: 20px;
+  top: -1.5em;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+}
+
+.question:hover,
+.arrow:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.question-open {
+  font-weight: 700;
+}
